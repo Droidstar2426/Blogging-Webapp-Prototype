@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menu</title>
+</head>
+<body>
+<h1 align="center">
+    Welcome To The Blog Menu
+</h1>
+<div align="right" style="margin:20px;">
+    <a href="logout">
+        Logout
+    </a>
+</div>
+<div align="right" style="margin:20px;">
+    Hey,{{N}} Want to Start Fresh? <a href="blogpage">
+    <button>New Blog</button>
+</a>
+</div>
+<div style="margin:20px;">
+<ol>
+{% for i in title %}
+    <li> <b>{{i}}</b></li>
+    {%for j in desc %}
+        {{j}}
+    {% endfor %}
+{% endfor %}
+</ol>
+</div>
+</body>
+</html>

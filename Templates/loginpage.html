@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <style>
+        .box{
+        height:200px;
+        width:300px;
+        background-color:violet;
+        margin-top:150px;
+        }
+    </style>
+</head>
+<body style="background-color:purple;">
+<h1 align="center">
+    <font color="white">Welcome to Paras's Blogging</font>
+</h1>
+<div align="center">
+<div class="box" align="center">
+<form  method="post" style="padding-top:40px;">
+    <div><font color="white">UserName:</font>
+        <input type="text" name="Username" placeholder="Username" style="margin:10px;"></div>
+    <div><font color="white">Password:</font>
+        <input type="password" name="Password" placeholder="Password" style="margin:10px;"></div>
+    <div>
+        <input type="submit" value="submit"></div>
+    <div style="margin:20px;">{{error}}</div>
+</form>
+</div>
+    <div> <font color="white">not logged?</font>
+<a href="signup">
+    <button>Signup</button>
+</a>
+    </div>
+</div>
+</body>
+</html>
