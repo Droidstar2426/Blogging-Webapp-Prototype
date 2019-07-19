@@ -1,14 +1,15 @@
 from flask import Flask,redirect,url_for,render_template,request,session
+import os
 import sqlite3
 app = Flask(__name__)
-app.secret_key="Kartik"
+app.secret_key=os.urandom(142)
 sql = sqlite3.connect("database_1.db")
 sql.execute("CREATE TABLE IF NOT EXISTS login(name TEXT,password TEXT)")
 
 menu1= sqlite3.connect("menubase.db")
 menu1.execute("CREATE TABLE IF NOT EXISTS items(title TEXT,desc TEXT)")
 
-#database = {"user":"user"}
+
 
 @app.route("/signup",methods=["GET","POST"])
 def signup():
